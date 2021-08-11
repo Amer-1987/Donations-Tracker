@@ -44,13 +44,9 @@ color: white
 
 }
 
-/* #table{
-
-
-} */
 
 #table {
-    border: ;
+    
     background-color: yellow;
     float: right;
     margin-right: 8%;
@@ -87,8 +83,3 @@ color: white
     margin-left: 30%;
 }
 
-#tableAndButton{
-
-
-
-}

@@ -12,6 +12,7 @@ function Donation(name, amount, age) {
     this.age = age;
 
     Donation.allDonations.push(this);
+
 }
 
 // create random function of age
@@ -26,7 +27,8 @@ form = document.addEventListener('submit', submitter);
 // create function of click on the submit button
 function submitter(event) {
     event.preventDefault();
-    //location.reload():
+    // location.reload():
+
 
     let name = event.target.name.value;
     let amount = event.target.amount.value;
@@ -36,8 +38,6 @@ function submitter(event) {
     setToLocalStorage();
     table.textContent='';
     header();
-
-
     tableBody();
 
 }
@@ -117,10 +117,10 @@ function getFromLocalStorage() {
 
 }
 
-
 getFromLocalStorage();
 header();
 tableBody();
+
 
 
 
