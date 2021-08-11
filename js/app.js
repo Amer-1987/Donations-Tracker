@@ -13,9 +13,9 @@ function Donation(name, amount, age) {
 
     Donation.allDonations.push(this);
 
-}
+};
 
-// create random function of age
+// create random function of age . taken from w3schools
 function randomAge(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -94,7 +94,14 @@ function tableBody() {
 
 }
 
-console.log(Donation.allDonations);
+//create prototype function 
+
+Donation.prototype.Try=function(){
+
+    console.log("hello everybody");
+}
+
+
 
 function setToLocalStorage() {
     localStorage.setItem('donations', JSON.stringify(Donation.allDonations));
